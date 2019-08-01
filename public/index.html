@@ -29,13 +29,13 @@
     /* Use .then to define behaviour for a succesful fetch, after it happens        */
     /* The below will create an unnamed function using `function(response) {}`      */
     /* Note in this case the initial input can have any name - response is just one */
-    .then(function(response) {
+    .then(function(plump) {
     /* First check if the response is valid - if not we can write an error          */
-      if (!response.ok) {
-        throw new Error("HTTP error, status = " + response.status);
+      if (!plump.ok) {
+        throw new Error("HTTP error, status = " + plump.status);
       }
       
-      return response.json();
+      return plump.json();
     })
     .then(function(json) {
       for(var i = 0; i < json.products.length; i++) {
