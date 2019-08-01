@@ -1,9 +1,11 @@
- /* Define the ul HTML tag as a variable to be appended */
+/* This all gets minified by Netlify so who cares if it's overcommented */
+
+/* Define the ul HTML tag as a variable to be appended */
     var myList = document.querySelector('ul');
     
     /* Grab using fetch - in this case, a file */
     fetch('products.json')
-    
+       
     /* Use .then to define behaviour for a succesful fetch, after it happens                */
     /* The below will create an unnamed function using `function(response) {}`              */
     /* Note in this case the initial input can have any name - response is typically used   */
